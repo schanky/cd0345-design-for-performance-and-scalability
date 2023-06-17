@@ -1,0 +1,22 @@
+﻿Estimate summary,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
+10.48576,8249.214,99001.05,USD,,,,,,
+,,* Includes upfront cost,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Detailed Estimate,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Increased_Cost Estimate,US East (N. Virginia),Increased_Cost_Estimate_VPC,Network Address Translation (NAT) Gateway,0,1415.25,16983,USD,,Number of NAT Gateways (1)
+Increased_Cost Estimate,US East (N. Virginia),,S3 Standard,10.48576,1275.18,15312.65,USD,,"S3 Standard storage (50 TB per month), S3 Standard Average Object Size (25 MB)"
+Increased_Cost Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,,"DT Inbound: Internet (20 TB per month), DT Outbound: Amazon CloudFront (20 TB per month)"
+Increased_Cost Estimate,US East (N. Virginia),Initial_Cost_Estimate_EC2,Amazon EC2 ,0,3804.784,45657.41,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 16), Advance EC2 instance (t3.xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), EBS Storage amount (30 GB), DT Inbound: Internet (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Increased_Cost Estimate,US East (N. Virginia),,Application Load Balancer,0,208.05,2496.6,USD,,Number of Application Load Balancers (2)
+Increased_Cost Estimate,US East (N. Virginia),Initial_Estimate_RDS,Amazon RDS for PostgreSQL,0,1545.95,18551.4,USD,,"Storage volume (General Purpose SSD (gp2)), Storage amount (30 GB), Nodes (2), Instance Type (db.m2.xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (30 GB), Total Size of Backup Processed for Export (GB) (50000 per month)"
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Acknowledgement,,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+"Scaled back services and added DB instances and dedicated EC2 instances. We are still way under budget here, so for additional resiliency, we could add regional redundancy.",,,,,,,,,
